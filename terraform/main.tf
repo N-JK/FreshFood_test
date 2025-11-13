@@ -1,5 +1,7 @@
-#simple file resource
+#the file to mention the desired state
 
+
+#simple file resource
 resource "local_file" "freshfood_test" {
   #filename = "terraform"
   #filename = "${path.module}"
