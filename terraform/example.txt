@@ -1,1 +1,3 @@
-Hi Nibin, Terraform says hi!!!!!!
+    "Hi Nibin, Terraform says hi!!!!!!"
+    environment = dev
+    port=3000
