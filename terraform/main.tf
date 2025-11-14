@@ -1,6 +1,6 @@
 #the file to mention the desired state
 locals {
-  environment = "dev"
+  environment = "prod"
   upper_case = upper(local.environment)
   basepath = "${path.module}/config/${local.upper_case}"
 }
@@ -19,7 +19,7 @@ resource "local_file" "freshfood_test" {
 }
 
 resource "local_file" "example1" {
-  filename = "${path.module}/${var.filename-2}.txt"
+  filename = "${path.module}/configs/${var.filename-2}.txt"
   content = "Example for demo"
   count = var.count_num
 }

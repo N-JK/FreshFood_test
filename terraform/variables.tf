@@ -1,6 +1,6 @@
 variable "filename-1" {
   description = "name of file 1"
-  default = "example"
+  default = "content"
   type = string
 }
 variable "filename-2" {
