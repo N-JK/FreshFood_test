@@ -18,3 +18,4 @@ variable "count_num" {
   type = number
   default = 1
 }
+
