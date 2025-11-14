@@ -10,7 +10,11 @@ resource "local_file" "freshfood_test" {
   #filename = "terraform"
   #filename = "${path.module}"
   filename = "/Users/ASUS/OneDrive/Desktop/freshfoodtest-master/terraform/${var.filename-1}.txt"
-  content = "Hi Nibin, Terraform says hi!!!!!!"
+  content = <<EOT
+    "Hi Nibin, Terraform says hi!!!!!!"
+    environment = ${local.environment}
+    port=3000
+    EOT
   count = var.count_num
 }
 
