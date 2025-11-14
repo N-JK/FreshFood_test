@@ -9,4 +9,9 @@ NB:terraform config file and terraform.tfstate file always should be matching to
 
 6. tf Satefile storing in backend, if working with K8s we can store this statefile in the kubernetes cluster as secert.
 
-7. variables and outputs
+7. variables and outputs:
+variable types:
+1) input variables
+2) output variables
+3) local variables
+
