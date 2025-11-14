@@ -27,4 +27,5 @@ resource "local_file" "example1" {
 
 output "filename_1" {
   value = local_file.freshfood_test.filename
+  sensitive = true
 }
