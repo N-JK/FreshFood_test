@@ -15,7 +15,8 @@ resource "local_file" "freshfood_test" {
     environment = ${local.environment}
     port=3000
     EOT
-  count = var.count_num
+  count = 1
+  #count = var.count_num
 }
 
 resource "local_file" "example1" {
@@ -24,6 +25,6 @@ resource "local_file" "example1" {
   count = var.count_num
 }
 
-output "filename-1" {
-  value = local_file.example1.filename
+output "filename_1" {
+  value = local_file.freshfood_test.filename
 }
