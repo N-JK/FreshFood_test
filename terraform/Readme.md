@@ -11,7 +11,8 @@ NB:terraform config file and terraform.tfstate file always should be matching to
 
 7. variables and outputs:
 variable types:
-1) input variables
-2) output variables
-3) local variables
+1) input variables (variables.tf)
+2) output variables (outputs.tf )
+3) local variables (main.tf/locals.tf)
+
 
